@@ -1,3 +1,3 @@
 # raffle-draw-api
 
-*this is testing
+This is my fist attempt to create REST API using Express JS NodeJS 
