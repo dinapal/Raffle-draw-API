@@ -1,0 +1,62 @@
+GET http://localhost:4000/health
+
+###
+
+GET http://localhost:4000/api/v1/tickets
+
+####
+
+POST http://localhost:4000/api/v1/tickets
+Content-Type: application/json
+
+{
+    "username": "Dina Pal",
+    "price": 20
+}
+
+####
+
+POST http://localhost:4000/api/v1/tickets/bulk
+Content-Type: application/json
+
+{
+    "username": "Sabita Pal",
+    "price": 23,
+    "quantity": 6
+}
+
+#####
+
+GET http://localhost:4000/api/v1/tickets/t/23xa3OsHC
+
+###
+
+GET http://localhost:4000/api/v1/tickets/u/Dina Pal
+
+###
+
+DELETE http://localhost:4000/api/v1/tickets/t/Uwx0EDXJb
+
+### 
+DELETE  http://localhost:4000/api/v1/tickets/u/Dina Pal
+
+###
+
+PUT http://localhost:4000/api/v1/tickets/t/A5T-U1ZXgb
+
+Content-Type: application/json
+{
+    "username": "Sabit Pal"
+}
+
+### 
+PUT  http://localhost:4000/api/v1/tickets/u/Sabita Pal
+
+Content-Type: application/json
+{
+    "username": "Dina Pal"
+}
+
+###
+
+GET http://localhost:4000/api/v1/tickets/draw?wc=3
